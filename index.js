@@ -8,10 +8,13 @@
 
 function writeCards(namesArr, event) {
     let i = 0;
+    let newArr = [];
     while (i < namesArr.length) {
         console.log(`Thank you, ${namesArr[i]}, for the wonderful ${event} gift!`);
+        newArr.push(`Thank you, ${namesArr[i]}, for the wonderful ${event} gift!`);
         i++;
     }
+    return newArr;
 }
 
 // writeCards( [ 'Lisa', 'Kaitlin', 'Jan' ], 'surprise' )
